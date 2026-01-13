@@ -1,0 +1,11 @@
+name: my-mcp-server
+framework: fastmcp-python
+version: 0.1.0
+description: my mcp server test
+secrets:
+    local:
+        enabled: false
+        provider: env
+        file: .env.local
+created_at: 2026-01-13T12:11:29.135495+01:00
+updated_at: 2026-01-13T12:11:29.204703+01:00
