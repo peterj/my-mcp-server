@@ -13,10 +13,10 @@ COPY README.md ./
 
 RUN if [ -f uv.lock ]; then \
         echo "Using existing lockfile"; \
-        uv sync --frozen --no-dev --no-cache; \
+        uv sync --frozen --no-dev --no-cache --no-install-project; \
     else \
         echo "Generating lockfile and installing dependencies"; \
-        uv sync --no-dev --no-cache; \
+        uv sync --no-dev --no-cache --no-install-project;; \
     fi
 
 # Copy source code
