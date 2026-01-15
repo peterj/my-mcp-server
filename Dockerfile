@@ -19,6 +19,10 @@ RUN if [ -f uv.lock ]; then \
         uv sync --no-dev --no-cache --no-install-project; \
     fi
 
+# Debug: Show what was installed
+RUN ls -la /app/.venv/lib/python*/site-packages/ | head -20
+RUN pip list || uv pip list || echo "Could not list packages"
+
 # Copy source code
 COPY src/ ./src/
 COPY mcp.yaml ./
