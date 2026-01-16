@@ -69,7 +69,7 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 # Set environment variables
 ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
-ENV MCP_TRANSPORT_MODE=http
+#ENV MCP_TRANSPORT_MODE=http
 
 # Default command
 CMD ["python", "src/main.py"] 
