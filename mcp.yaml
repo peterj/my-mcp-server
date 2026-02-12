@@ -1,0 +1,14 @@
+name: my-mcp-server
+framework: fastmcp-python
+version: 0.1.0
+description: MCP server built with fastmcp-python
+secrets:
+    local:
+        enabled: false
+        provider: env
+        file: .env.local
+runtimeHint: python
+runtimeArgs:
+    - src/main.py
+created_at: 2026-02-12T10:59:29.887605-08:00
+updated_at: 2026-02-12T10:59:29.968628-08:00
